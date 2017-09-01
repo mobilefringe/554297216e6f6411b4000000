@@ -101,7 +101,7 @@
         a{
             color:#999999;
             text-decoration:inherit;
-        }
+        }op
         /*hyperlink hover color*/
         a:hover{
             color:#999999 !important;
@@ -339,46 +339,35 @@
                         </script>{% endraw %}
                     
                         <ul class="list-group" >
-                            
                             <li>
-                            <a  class="close-search list-group-item" style="color:black;font-weight:bold">
-                                <small>
-                                    <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
-                                </small>
-                            </a>
+                                <a  class="close-search list-group-item" style="color:black;font-weight:bold">
+                                    <small>
+                                        <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
+                                    </small>
+                                </a>
                             </li>
                             <li>
-                            <div id="search_results_items" class="search-results-items" style="">
-                            <!--RENDERED BY renderSearchResultsTemplate(..) -->
-                            </div>
+                                <div id="search_results_items" class="search-results-items" style="">
+                                <!--RENDERED BY renderSearchResultsTemplate(..) -->
+                                </div>
                             </li>
                             <li>
-                            <a  class="close-search list-group-item" style="">
-                                <small>
-                                    <span>Today's Hours </span>
-                                </small>
-                                <small class="pull-right" id="todays-hours-search">
-                                
-                                </small>
-                                <script id="todays_hours_search_template" type="x-tmpl-mustache/text">{% raw %}
-                                    <span style="{{is_open_css}};">
-                                        {{open_time_localized}} - {{close_time_localized}}
-                                    </span>
-                                    <span style="{{is_closed_css}};">
-                                        Closed
-                                    </span>
-                                </script>{% endraw %}
-                            </a>
+                                <a  class="close-search list-group-item" style="">
+                                    <small>
+                                        <span>Today's Hours </span>
+                                    </small>
+                                    <small class="pull-right" id="todays-hours-search"></small>
+                                    <script id="todays_hours_search_template" type="x-tmpl-mustache/text">{% raw %}
+                                        <span>{{hours}}</span>
+                                    </script>
+                                    {% endraw %}
+                                </a>
                             </li>
                         </ul>
                     </div>
-                 </div>
-                 
-                 
+                </div>
             </div>
         </div>
-        
-        
     </section>
     
     <section class="site-map-section">
