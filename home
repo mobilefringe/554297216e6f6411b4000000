@@ -36,12 +36,11 @@
      <div class="container" style="padding-right:0;padding-left:0">
             
           <section class="portfolio_teasers_wrapper" style="text-align:center">
-               <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
                <div class="portfolio_strict row" id="feature_items">
                     <script id="feature_template" type="x-tmpl-mustache/text">
                         <div class="feature_div">
                             <div class="portfolio_description">
-                                <h3 class="feature_title"><a style="color:black;font-size:20px" href="{{url}}">{{name}}</a></h3>
+                                <h3 class="feature_title">{{name}}</h3>
                             </div>
                             <div class="portfolio_item"> 
                                 <a href="{{url}}" data-path-hover="M 180,190 0,158 0,0 180,0 z">
