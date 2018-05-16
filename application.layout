@@ -90,8 +90,7 @@
                 imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
             });      
         });
-        // setEndPoint('//parkwaycentre.mallmaverick.com/api/v4/parkwaycentre/all.json');
-        setEndPoint('//twinpine.mallmaverick.com/api/v4/twinpine/all.json');
+        setEndPoint('//parkwaycentre.mallmaverick.com/api/v4/parkwaycentre/all.json');
     </script>
     <style>
         /*custom styles*/
